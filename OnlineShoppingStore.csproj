@@ -220,6 +220,7 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CategoryDetail.cs" />
+    <Compile Include="Models\Home\HomeIndexViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Shopping.cs" />
@@ -1857,6 +1858,11 @@
     <Content Include="Images\republic.png" />
     <Content Include="Images\search.png" />
     <Content Include="Images\spar.png" />
+    <Content Include="ProductImg\apple.jpg" />
+    <Content Include="ProductImg\harry.jpg" />
+    <Content Include="ProductImg\hp.jpg" />
+    <Content Include="ProductImg\inev.jpg" />
+    <Content Include="ProductImg\ommen.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <EntityDeploy Include="DAL\Model1.edmx">
@@ -2067,6 +2073,11 @@
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\Admin\Dashboard.cshtml" />
     <Content Include="Views\Admin\Categories.cshtml" />
+    <Content Include="Views\Admin\UpdateCategory.cshtml" />
+    <Content Include="Views\Admin\Book.cshtml" />
+    <Content Include="Views\Admin\BookEdit.cshtml" />
+    <Content Include="Views\Admin\BookAdd.cshtml" />
+    <Content Include="Views\Admin\CategoryEdit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

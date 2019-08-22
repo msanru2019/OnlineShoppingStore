@@ -1,4 +1,5 @@
-﻿@{
+﻿@model OnlineShoppingStore.Models.Home.HomeIndexViewModel
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -65,34 +66,42 @@
 </div>
 
 <div class="row product-container">
- <div class="col-md-3 col-sm-3 col-xs-6" style="margin-bottom:8px">
-     <div class="thumbnail product-item" style="height:300px">
-         <img class="img-responsive" title="Click to view Book detail"
-              style="cursor:pointer;height:160px;width:100%"
-         src="~/Images/dracula.png" />
+    @foreach (var item in Model.ListOfBooks)
+    {
+        <div class="col-md-3 col-sm-3 col-xs-6" style="margin-bottom:8px">
+            <div class="thumbnail product-item" style="height:300px">
+                <img class="img-responsive" title="Click to view Book detail"
+                     style="cursor:pointer;height:160px;width:100%"
+                     src="~/ProductImg/@item.ProductImage" />
 
-         <div class="caption">
-             <h5>Book Name</h5>
-             <p>£30.00</p>
-             <p>Available</p>
-             <div class="product-item-badge">New</div>
-         </div>
-     </div>
- </div>
-</div>
-<div class="row product-container">
-    <div class="col-md-3 col-sm-3 col-xs-6" style="margin-bottom:8px">
-        <div class="thumbnail product-item" style="height:300px">
-            <img class="img-responsive" title="Click to view Book detail"
-                 style="cursor:pointer;height:160px;width:100%"
-                 src="~/Images/mobydick.png"  />
-
-            <div class="caption">
-                <h5>Book Name</h5>
-                <p>£30.00</p>
-                <p>Available</p>
-                <div class="product-item-badge">New</div>
+                <div class="caption">
+                    <h5>@item.BookName</h5>
+                    <p>@item.Price £</p>
+                    <p>
+                        @if (item.Quantity > 0)
+                        {
+                        <p>Available</p>
+                    }
+                    else
+                    {
+                        <p>Not Available</p>
+                    }
+                        </p>
+                <div class="product-item-badge">
+                    @if (item.IsFeatured==true)
+                    {
+                        <p>New</p>
+                    }
+                    else
+                    {
+                        <p>Old</p>
+                    }
+                    
+                </div>
+                    </div>
             </div>
         </div>
-    </div>
+    }
+
+
 </div>

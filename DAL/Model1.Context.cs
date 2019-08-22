@@ -28,7 +28,7 @@ namespace OnlineShoppingStore.DAL
         public virtual DbSet<Tbl_Book> Tbl_Book { get; set; }
         public virtual DbSet<Tbl_Cart> Tbl_Cart { get; set; }
         public virtual DbSet<Tbl_CartStatus> Tbl_CartStatus { get; set; }
-        public virtual DbSet<Tbl_Catergory> Tbl_Catrgory { get; set; }
+        public virtual DbSet<Tbl_Catrgory> Tbl_Catrgory { get; set; }
         public virtual DbSet<Tbl_MemberRole> Tbl_MemberRole { get; set; }
         public virtual DbSet<Tbl_Members> Tbl_Members { get; set; }
         public virtual DbSet<Tbl_Roles> Tbl_Roles { get; set; }

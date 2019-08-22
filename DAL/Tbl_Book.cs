@@ -33,7 +33,7 @@ namespace OnlineShoppingStore.DAL
         public Nullable<int> Quantity { get; set; }
         public Nullable<decimal> Price { get; set; }
     
-        public virtual Tbl_Catergory Tbl_Catrgory { get; set; }
+        public virtual Tbl_Catrgory Tbl_Catrgory { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Tbl_Cart> Tbl_Cart { get; set; }
     }

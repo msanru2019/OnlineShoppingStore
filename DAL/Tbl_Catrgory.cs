@@ -12,10 +12,10 @@ namespace OnlineShoppingStore.DAL
     using System;
     using System.Collections.Generic;
     
-    public partial class Tbl_Catergory
+    public partial class Tbl_Catrgory
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Tbl_Catergory()
+        public Tbl_Catrgory()
         {
             this.Tbl_Book = new HashSet<Tbl_Book>();
         }
